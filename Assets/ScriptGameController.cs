@@ -10,17 +10,16 @@ public class ScriptGameController : MonoBehaviour
 {
     private GameObject[] buttonObject;
     private Button[,] button;
-    private Text[,] piece;// quân cờ
+    private Text[,] pieceName;// quân cờ
     private Image[,] wall;
 
-    int[] a, b;
     int t;// t là biến để chọn ra quân cờ nào đang được chọn
 
-    Vector2Int[] pieces;
-    int m, n;
+    Vector2Int[] piece;
+    int m, n;// m, n 2 vị trí tọa độ vừa được click
 
     bool isSelecting = true;// biến để quyết định xem là đang chọn quân hay đang chọn cách di chuyển
-    string playerside = "X";
+    string playerside = "X";// lượt đầu tiên bao giờ cũng là X đi
     string XorOWIin;
 
 
@@ -37,12 +36,12 @@ public class ScriptGameController : MonoBehaviour
                 z++;
             }
 
-        piece = new Text[7, 7];
+        pieceName = new Text[7, 7];
         wall = new Image[7, 7];
         for (int i = 0; i < 7; i++)
             for (int j = 0; j < 7; j++)
             {
-                piece[i, j] = button[i, j].transform.Find("Text").GetComponent<Text>();
+                pieceName[i, j] = button[i, j].transform.Find("Text").GetComponent<Text>();
                 wall[i, j] = button[i, j].transform.Find("wall").GetComponent<Image>();
             }
 
@@ -51,8 +50,7 @@ public class ScriptGameController : MonoBehaviour
             btn.onClick.AddListener(SetTurn);
         }
 
-        pieces = new Vector2Int[5];
-        a = new int[5]; b = new int[5];
+        piece = new Vector2Int[5];
 
 
 
@@ -62,16 +60,12 @@ public class ScriptGameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        a[0] = 0; b[0] = 0; // vị trí của O1: góc trên bên trái
-        a[1] = 0; b[1] = 6; // vị trí của O2:góc trên bên phải
-        a[2] = 6; b[2] = 0; // vị trí của O3: góc dưới bên trái
-        a[3] = 6; b[3] = 6; // vị trí của O4: góc dưới bên phải
-        a[4] = 3; b[4] = 3; // vị trí của X ở giữa bản đồ
+        piece[0] = new Vector2Int(0, 0); // vị trí của O1: góc trên bên trái
+        piece[1] = new Vector2Int(0, 6); // vị trí của O2:góc trên bên phải
+        piece[2] = new Vector2Int(6, 0); // vị trí của O3: góc dưới bên trái
+        piece[3] = new Vector2Int(6, 6); // vị trí của O4: góc dưới bên phải
+        piece[4] = new Vector2Int(3, 3); // vị trí của X ở giữa bản đồ
 
-        for (int i = 0; i < 5; i++)
-        {
-            pieces[i] = new Vector2Int(a[i], b[i]);
-        }
 
         EndTurn();
     }
@@ -83,24 +77,18 @@ public class ScriptGameController : MonoBehaviour
             GameObject clickedButton = EventSystem.current.currentSelectedGameObject;
             for (int i = 0; i < 5; i++) // tắt hết các nút đi
             {
-                button[a[i], b[i]].interactable = false;
+                button[piece[i].x, piece[i].y].interactable = false;
             }
 
-            Findmn(clickedButton);
+            Findmn(clickedButton, ref m, ref n);
 
             if (m + 1 < 7) button[m + 1, n].interactable = true; // bật các nút xung quanh quân đó để di chuyển
             if (m - 1 > -1) button[m - 1, n].interactable = true;
             if (n + 1 < 7) button[m, n + 1].interactable = true;
             if (n - 1 > -1) button[m, n - 1].interactable = true;
 
-            for (int i = 0; i < 5; i++)
-            {
-                if (pieces[i] == new Vector2Int(m, n))
-                {
-                    t = i;
-                    break;
-                }
-            }
+
+            t = piece.IndexOf(new Vector2Int(m, n));
 
             isSelecting = false;
         }
@@ -108,7 +96,7 @@ public class ScriptGameController : MonoBehaviour
         {
             GameObject clickedButton = EventSystem.current.currentSelectedGameObject;
 
-            piece[m, n].text = "";// xóa quân cờ ở ô này đi
+            pieceName[m, n].text = "";// xóa quân cờ ở ô này đi
             button[m, n].enabled = false; // vô hiệu hóa luôn nút này
             wall[m, n].enabled = true;// xuất hiện tường tại ô này
 
@@ -117,8 +105,8 @@ public class ScriptGameController : MonoBehaviour
             if (n + 1 < 7) button[m, n + 1].interactable = false;
             if (n - 1 > -1) button[m, n - 1].interactable = false;
 
-            Findmn(clickedButton);
-            pieces[t] = new Vector2Int(m, n);// chuyển vị trí quân đang điều khiển
+            Findmn(clickedButton, ref m, ref n);
+            piece[t] = new Vector2Int(m, n);// chuyển vị trí quân đang điều khiển
 
             if (CheckGameOver(clickedButton, ref XorOWIin))
             {
@@ -134,10 +122,11 @@ public class ScriptGameController : MonoBehaviour
             }
             else
             {
-                piece[m, n].text = playerside;
+                pieceName[m, n].text = playerside;
                 playerside = (playerside == "X") ? "O" : "X";// đổi phe
             }
         }
+
 
 
 
@@ -148,7 +137,7 @@ public class ScriptGameController : MonoBehaviour
     {
         for (int i = 0; i < 5; i++) // bật nút của vị trí các quân
         {
-            button[a[i], b[i]].interactable = true;
+            button[piece[i].x, piece[i].y].interactable = true;
         }
 
     }
@@ -198,7 +187,7 @@ public class ScriptGameController : MonoBehaviour
     }
 
 
-    void Findmn(GameObject clickedButton)// hàm tìm ra tọa độ của nút vừa bấm
+    void Findmn(GameObject clickedButton, ref int m, ref int n)// hàm tìm ra tọa độ của nút vừa bấm
     {
         for (int i = 0; i < 3; i++)
             for (int j = 0; j < 3; j++)
@@ -215,7 +204,7 @@ public class ScriptGameController : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            if (Check1pieceCanMove(button[pieces[i].x, pieces[i].y]))
+            if (Check1pieceCanMove(button[piece[i].x, piece[i].y]))
                 return true;
         }
 
@@ -223,9 +212,17 @@ public class ScriptGameController : MonoBehaviour
     }
 
     // hàm này để check xem 4 ô xung quanh có đi được nữa không
-    bool Check1pieceCanMove(Button button)
+    bool Check1pieceCanMove(Button button)// button là ô đang đứng
     {
+        if (m + 1 < 7 && button[m + 1, n].enabled) return true;
 
+        if (n + 1 < 7 && button[m, n + 1].enabled) return true;
+
+        if (m - 1 > -1 && button[m - 1, n].enabled) return true;
+
+        if (n - 1 > -1 && button[m, n - 1].enabled) return true;
+
+        return false;
     }
 
     void XWin()
