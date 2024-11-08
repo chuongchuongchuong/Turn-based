@@ -88,7 +88,14 @@ public class ScriptGameController : MonoBehaviour
             if (n - 1 > -1) button[m, n - 1].interactable = true;
 
 
-            t = piece.IndexOf(new Vector2Int(m, n));
+            for (int i = 0; i < piece.Length; i++)
+            {
+                if (piece[i].x == m && piece[i].y == n)
+                {
+                    t = i;
+                    break;
+                }
+            }
 
             isSelecting = false;
         }
@@ -183,6 +190,8 @@ public class ScriptGameController : MonoBehaviour
                 }
             }
         }
+
+        return false;
 
     }
 
