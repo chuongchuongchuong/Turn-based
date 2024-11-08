@@ -249,6 +249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &12057965 stripped
@@ -427,6 +431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &187490988 stripped
@@ -561,6 +569,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &214906183 stripped
@@ -575,6 +587,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864583913}
     m_Modifications:
+    - target: {fileID: 913880756839420274, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_Text
+      value: X
+      objectReference: {fileID: 0}
     - target: {fileID: 3748919754624240754, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Interactable
       value: 0
@@ -606,6 +622,10 @@ PrefabInstance:
     - target: {fileID: 3748919754624240754, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5324389890123551063, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5486022026164049004, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Pivot.x
@@ -691,9 +711,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8479434025766220620, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -829,6 +857,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &322440940 stripped
@@ -962,6 +994,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -1097,6 +1133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &490506131 stripped
@@ -1231,6 +1271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &490978961 stripped
@@ -1329,6 +1373,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864583913}
     m_Modifications:
+    - target: {fileID: 913880756839420274, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_Text
+      value: O
+      objectReference: {fileID: 0}
     - target: {fileID: 3748919754624240754, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Interactable
       value: 0
@@ -1448,6 +1496,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -1583,6 +1635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &669672481 stripped
@@ -1716,6 +1772,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -1867,6 +1927,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &699234592 stripped
@@ -2000,6 +2064,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -2135,6 +2203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &834839740 stripped
@@ -2268,6 +2340,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -2403,6 +2479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &883159115 stripped
@@ -2417,6 +2497,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864583913}
     m_Modifications:
+    - target: {fileID: 913880756839420274, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_Text
+      value: O
+      objectReference: {fileID: 0}
     - target: {fileID: 3748919754624240754, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -2532,6 +2616,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -2667,6 +2755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &890834927 stripped
@@ -2800,6 +2892,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -2935,6 +3031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &926725032 stripped
@@ -3068,6 +3168,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -3203,6 +3307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &977235205 stripped
@@ -3332,6 +3440,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -3467,6 +3579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &1000416736 stripped
@@ -3600,6 +3716,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -3735,6 +3855,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &1073502292 stripped
@@ -3865,6 +3989,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &1095986053 stripped
@@ -3879,6 +4007,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864583913}
     m_Modifications:
+    - target: {fileID: 913880756839420274, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_Text
+      value: O
+      objectReference: {fileID: 0}
     - target: {fileID: 3748919754624240754, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Interactable
       value: 0
@@ -3998,6 +4130,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -4133,6 +4269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &1201731172 stripped
@@ -4266,6 +4406,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -4401,6 +4545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &1304399500 stripped
@@ -4534,6 +4682,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -4669,6 +4821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &1404608732 stripped
@@ -4802,6 +4958,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -4937,6 +5097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &1453546593 stripped
@@ -5070,6 +5234,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -5205,6 +5373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &1552933863 stripped
@@ -5338,6 +5510,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -5473,6 +5649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &1600797517 stripped
@@ -5606,6 +5786,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -5741,6 +5925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &1650864736 stripped
@@ -5874,6 +6062,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -6009,6 +6201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &1804674122 stripped
@@ -6142,6 +6338,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -6344,6 +6544,10 @@ PrefabInstance:
     - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
@@ -6638,6 +6842,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &1944991740 stripped
@@ -6772,6 +6980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &2053935045 stripped
@@ -6902,6 +7114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (Legacy) (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161438033022176667, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
 --- !u!224 &2078090500 stripped
@@ -6916,13 +7132,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864583913}
     m_Modifications:
+    - target: {fileID: 913880756839420274, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
+      propertyPath: m_Text
+      value: O
+      objectReference: {fileID: 0}
     - target: {fileID: 3748919754624240754, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3748919754624240754, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3748919754624240754, guid: f4aa97667b14334409546ffa560dfe4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

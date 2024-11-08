@@ -16,7 +16,7 @@ public class ScriptGameController : MonoBehaviour
     int t;// t là biến để chọn ra quân cờ nào đang được chọn
 
     Vector2Int[] piece;
-    int m, n;// m, n 2 vị trí tọa độ vừa được click
+    int a, b;// a, b 2 vị trí tọa độ vừa được click
 
     bool isSelecting = true;// biến để quyết định xem là đang chọn quân hay đang chọn cách di chuyển
     string playerside = "X";// lượt đầu tiên bao giờ cũng là X đi
@@ -66,8 +66,8 @@ public class ScriptGameController : MonoBehaviour
         piece[3] = new Vector2Int(6, 6); // vị trí của O4: góc dưới bên phải
         piece[4] = new Vector2Int(3, 3); // vị trí của X ở giữa bản đồ
 
-
-        EndTurn();
+        a = 1; b = 2;
+        TurnOnPieceButton();
     }
 
     public void SetTurn()
@@ -75,22 +75,24 @@ public class ScriptGameController : MonoBehaviour
         if (isSelecting) // lượt chọn quân đi
         {
             GameObject clickedButton = EventSystem.current.currentSelectedGameObject;
+            Debug.Log(clickedButton.name);
             for (int i = 0; i < 5; i++) // tắt hết các nút đi
             {
                 button[piece[i].x, piece[i].y].interactable = false;
             }
 
-            Findmn(clickedButton, ref m, ref n);
+            Findmn(clickedButton, ref a, ref b);
+            Debug.Log($"{a} {b}");
 
-            if (m + 1 < 7) button[m + 1, n].interactable = true; // bật các nút xung quanh quân đó để di chuyển
-            if (m - 1 > -1) button[m - 1, n].interactable = true;
-            if (n + 1 < 7) button[m, n + 1].interactable = true;
-            if (n - 1 > -1) button[m, n - 1].interactable = true;
+            if (a + 1 < 7) button[a + 1, b].interactable = true; // bật các nút xung quanh quân đó để di chuyển
+            if (a - 1 > -1) button[a - 1, b].interactable = true;
+            if (b + 1 < 7) button[a, b + 1].interactable = true;
+            if (b - 1 > -1) button[a, b - 1].interactable = true;
 
 
-            for (int i = 0; i < piece.Length; i++)
+            for (int i = 0; i < 5; i++)
             {
-                if (piece[i].x == m && piece[i].y == n)
+                if (piece[i].x == a && piece[i].y == b)
                 {
                     t = i;
                     break;
@@ -98,22 +100,23 @@ public class ScriptGameController : MonoBehaviour
             }
 
             isSelecting = false;
+            return;
         }
         else // lượt di chuyển
         {
             GameObject clickedButton = EventSystem.current.currentSelectedGameObject;
 
-            pieceName[m, n].text = "";// xóa quân cờ ở ô này đi
-            button[m, n].enabled = false; // vô hiệu hóa luôn nút này
-            wall[m, n].enabled = true;// xuất hiện tường tại ô này
+            pieceName[a, b].text = "";// xóa quân cờ ở ô này đi
+            button[a, b].enabled = false; // vô hiệu hóa luôn nút này
+            wall[a, b].enabled = true;// xuất hiện tường tại ô này
 
-            if (m + 1 < 7) button[m + 1, n].interactable = false;  // tắt hết các nút di chuyển xung quanh
-            if (m - 1 > -1) button[m - 1, n].interactable = false;
-            if (n + 1 < 7) button[m, n + 1].interactable = false;
-            if (n - 1 > -1) button[m, n - 1].interactable = false;
+            if (a + 1 < 7) button[a + 1, b].interactable = false;  // tắt hết các nút di chuyển xung quanh
+            if (a - 1 > -1) button[a - 1, b].interactable = false;
+            if (b + 1 < 7) button[a, b + 1].interactable = false;
+            if (b - 1 > -1) button[a, b - 1].interactable = false;
 
-            Findmn(clickedButton, ref m, ref n);
-            piece[t] = new Vector2Int(m, n);// chuyển vị trí quân đang điều khiển
+            Findmn(clickedButton, ref a, ref b);
+            piece[t] = new Vector2Int(a, b);// chuyển vị trí quân đang điều khiển
 
             if (CheckGameOver(clickedButton, ref XorOWIin))
             {
@@ -129,24 +132,21 @@ public class ScriptGameController : MonoBehaviour
             }
             else
             {
-                pieceName[m, n].text = playerside;
+                pieceName[a, b].text = playerside;
                 playerside = (playerside == "X") ? "O" : "X";// đổi phe
+                TurnOnPieceButton();// bật nút của vị trí các quân
+                isSelecting = true;
             }
         }
 
-
-
-
-        EndTurn();// bật nút của vị trí các quân
     }
 
-    void EndTurn() // bật nút của vị trí các quân
+    void TurnOnPieceButton() // bật nút của vị trí các quân
     {
         for (int i = 0; i < 5; i++) // bật nút của vị trí các quân
         {
             button[piece[i].x, piece[i].y].interactable = true;
         }
-
     }
 
     private bool CheckGameOver(GameObject clickedButton, ref string XorOWin)// hàm này để check xem có bên nào thắng không, hay hòa
@@ -198,8 +198,8 @@ public class ScriptGameController : MonoBehaviour
 
     void Findmn(GameObject clickedButton, ref int m, ref int n)// hàm tìm ra tọa độ của nút vừa bấm
     {
-        for (int i = 0; i < 3; i++)
-            for (int j = 0; j < 3; j++)
+        for (int i = 0; i < 7; i++)
+            for (int j = 0; j < 7; j++)
             {
                 if (button[i, j] == clickedButton.GetComponent<Button>())
                 {
@@ -213,23 +213,24 @@ public class ScriptGameController : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            if (Check1pieceCanMove(button[piece[i].x, piece[i].y]))
+            if (Check1pieceCanMove(button, piece[i].x, piece[i].y))
                 return true;
         }
 
         return false;
     }
 
-    // hàm này để check xem 4 ô xung quanh có đi được nữa không
-    bool Check1pieceCanMove(Button button)// button là ô đang đứng
+    // hàm này để check xem 4 ô xung quanh có đi được nữa không.
+    //// truyền vào đây 1 dãy nút, m,n là vị trí của nút này trong tọa độ
+    bool Check1pieceCanMove(Button[,] button, int a, int b)
     {
-        if (m + 1 < 7 && button[m + 1, n].enabled) return true;
+        if (a + 1 < 7 && button[a + 1, b].enabled) return true;
 
-        if (n + 1 < 7 && button[m, n + 1].enabled) return true;
+        if (b + 1 < 7 && button[a, b + 1].enabled) return true;
 
-        if (m - 1 > -1 && button[m - 1, n].enabled) return true;
+        if (a - 1 > -1 && button[a - 1, b].enabled) return true;
 
-        if (n - 1 > -1 && button[m, n - 1].enabled) return true;
+        if (b - 1 > -1 && button[a, b - 1].enabled) return true;
 
         return false;
     }
